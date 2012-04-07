@@ -1,16 +1,15 @@
 # encoding: utf-8
-import base64
+
 import email
 import imaplib
-import re
-import matcher
+from mail_utils import decode_from_address, decode_string
 
 
 M = imaplib.IMAP4_SSL('imap.gmail.com', 993)
-M.login('chsc4698@gmail.com', 'staCraft1**')
+M.login('chsc4698@gmail.com', '')
 print 'logging in'
 M.select()
-type, data = M.search(None, 'ALL')
+type, data = M.search(None, 'UNSEEN')
 ids = data[0].split()
 for item in ids[::-1][:20]:
     _, raw_data = M.fetch(item, '(RFC822)')
