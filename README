@@ -1,0 +1,21 @@
+
+If the subject of a mail does not match a specific pattern, send a mail to notice about the mismatch.
+
+Further ability may include auto-downloading attachments from the mails that match a specific pattern.
+
+TODO: finish send mail function
+
+
+chsc4698@gmail.com @whu
+
+
+
+CHANGELOG:
+
+20120408T1:28
+->  prototype
+    |   regexp-like dsl, simpler and easier to use.
+    |   fetch unread mails using imap
+
+
+

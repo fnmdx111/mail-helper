@@ -1,0 +1,12 @@
+
+第{course: d}次课 - {name: w} - {major: w}{class_number: d}班 - {id: d13}
+第(\d+)次课\s*-\s*(\w+)\s*-\s*(\w+)(\d+)班\s*-\s*(\d{13})
+
+
+世界英语概览 {department: .} {name: w} 学号: {id: d}
+
+
+
+
+
+
