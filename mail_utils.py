@@ -79,4 +79,6 @@ def cb_mail(mail):
         pass
 
 
+def guess_imap_server(address):
+    return 'imap.' + address.split('@')[1]
 

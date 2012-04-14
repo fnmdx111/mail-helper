@@ -2,14 +2,15 @@
 
 import email
 import imaplib
-from mail_utils import decode_from_address, decode_string
+import config
+from mail_utils import decode_from_address, decode_string, guess_imap_server
 
 
-M = imaplib.IMAP4_SSL('imap.gmail.com', 993)
-M.login('chsc4698@gmail.com', '')
+M = imaplib.IMAP4_SSL(guess_imap_server(config.EMAIL_ADDRESS), 993)
+M.login(config.EMAIL_ADDRESS, config.PASSWORD)
 print 'logging in'
 M.select()
-type, data = M.search(None, 'UNSEEN')
+type, data = M.search(None, 'ALL')
 ids = data[0].split()
 for item in ids[::-1][:20]:
     _, raw_data = M.fetch(item, '(RFC822)')
