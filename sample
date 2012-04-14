@@ -1,12 +1,38 @@
 
+web_design:
 第{course: d}次课 - {name: w} - {major: w}{class_number: d}班 - {id: d13}
 第(\d+)次课\s*-\s*(\w+)\s*-\s*(\w+)(\d+)班\s*-\s*(\d{13})
 
 
+world_english:
 世界英语概览 {department: .} {name: w} 学号: {id: d}
 
 
 
+select @world_english
+    where "计算机学院" = @department;
+          "2010"    -> @id
+
+select pages from @world_english where "计算机学院" = @department; "2010" -> @id {
+    foreach {
+        make-dir @name
+        put-email-at @name as `doc`
+        take-note-of @id
+    }
+}
+
+select attachments from @web_design where @course > 2 {
+    foreach {
+        make-dir @name
+        $name = put-attachment-at @name
+        take-note-of @id
+        !tar -zxvf $name
+    }
+}
 
 
-
+for-each @course, @name, @id in @web_design where @course > 2:
+    make-dir @name
+    take-note-of @id in 'c:\list.txt'
+    get-attachment --rename @name.&suffix --where .\@name
+    !tar -zxvf @name.&suffix

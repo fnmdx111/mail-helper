@@ -5,9 +5,9 @@ import re
 
 SPACE_AWARE = False
 def translate_pattern(raw_pattern):
-    META_CHARACTERS = [u'.', u'^', u'$', u'*', u'+', u'?', u'\\', u'{', u'}', u'[', u']', u'(', u')', u'|']
+    META_CHARACTERS = ['.', '^', '$', '*', '+', '?', '\\', '{', '}', '[', ']', '(', ')', '|']
 
-    raw_chunks = raw_pattern.replace(u'{', u'%').replace(u'}', u'$%').split(u'%')
+    raw_chunks = raw_pattern.replace('{', '%').replace('}', '$%').split('%')
 
     def _translate_sub_pattern(sub_raw_pattern):
         substitution = {
@@ -28,9 +28,9 @@ def translate_pattern(raw_pattern):
 
 
     def escape_re(string):
-        result = [u'\\' + i if i in META_CHARACTERS else i for i in string]
+        result = ['\\' + i if i in META_CHARACTERS else i for i in string]
 
-        return u''.join(result)
+        return ''.join(result)
 
 
     chunks = []
@@ -63,14 +63,14 @@ def translate_pattern(raw_pattern):
 # 世界英语概览 ({title: *}) {department: w} {name: w} 学号: {id: d}
 
 if __name__ == '__main__':
-    test = translate_pattern(u'第{course: d}次课 - {name: w} - {major: w}{class_number: d}班 - {id: d13}')
+    test = translate_pattern('第{course: d}次课 - {name: w} - {major: w}{class_number: d}班 - {id: d13}')
     #test = translate_pattern(u'世界英语概览 ({title: *}) {department: w} {name: w} 学号: {id: d}')
 
     pattern = re.compile(test, re.UNICODE)
-    match = pattern.search(u'第7次课-陈子杭-信安3班-2010302530073')
+    match = pattern.search('第7次课-陈子杭-信安3班-2010302530073')
     if match:
         for item in match.groups():
-            print item
+            print(item)
 
 
 

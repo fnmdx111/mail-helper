@@ -18,4 +18,8 @@ CHANGELOG:
     |   fetch unread mails using imap
 
 
+20120415T1:37
+->  prototype
+    |   fetch mails between `since` and `before`
+    |   next: fetch attachments
 

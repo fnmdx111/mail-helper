@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 import base64
+import datetime
 import email
 import re
 import matcher
@@ -26,12 +27,9 @@ def decode_string(string):
 
         TRAIT = '?B?'
 
-        return unicode(
-            base64.b64decode(
-                string[string.index(TRAIT) + len(TRAIT):]
-            ),
-            encoding
-        )
+        return base64.b64decode(
+                string[string.index(TRAIT) + len(TRAIT):].encode('ascii')
+            ).decode(encoding)
     else:
         return string
 
@@ -61,14 +59,14 @@ def transact_unseen_mails(mailbox, callback):
     for mail_id in data[0].split():
         _, raw_data = mailbox.fetch(mail_id, '(RFC822)')
         mail = email.message_from_string(raw_data[0][1])
-        print 'subject:', decode_string(mail['subject'])
-        print 'from:', decode_from_address(mail['from'])
+        print('subject:', decode_string(mail['subject']))
+        print('from:', decode_from_address(mail['from']))
 
         callback(mail)
 
 
 def cb_mail(mail):
-    pattern = re.compile(matcher.translate_pattern(u'世界英语概览 ({title: *}) {department: w} {name: w} {id: d}'), re.UNICODE)
+    pattern = re.compile(matcher.translate_pattern('世界英语概览 ({title: *}) {department: w} {name: w} {id: d}'), re.UNICODE)
     match = pattern.search(mail['from'])
 
     if not match:
@@ -79,6 +77,22 @@ def cb_mail(mail):
         pass
 
 
-def guess_imap_server(address):
-    return 'imap.' + address.split('@')[1]
+def get_mails_between(mail, before=None, since=None):
+    """
+        before and since should be 3-tuple as (year, month, day)
+    """
+    OK = 'OK'
+    get_search_stmt = lambda obj, name: '%s %s' % (name, datetime.date(*obj).strftime(TIME_FORMAT)) if obj else ''
+    TIME_FORMAT = '%d-%b-%Y'
+    query = ('%s %s' % (
+        get_search_stmt(before, 'BEFORE'),
+        get_search_stmt(since, 'SINCE')
+    )).strip() # 太恶心了，多了个空格，给的错误竟然还是cannot parse command，fuck
+    if not before and not since:
+        query = 'ALL'
+
+    status, ids = mail.search(None, query)
+    if status == OK:
+        return ids[0].split()
+
 
