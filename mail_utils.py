@@ -77,7 +77,7 @@ def cb_mail(mail):
         pass
 
 
-def get_mails_between(mail, before=None, since=None):
+def get_mails_between(mail, before=None, since=None, unseen=False):
     """
         before and since should be 3-tuple as (year, month, day)
     """
@@ -88,11 +88,21 @@ def get_mails_between(mail, before=None, since=None):
         get_search_stmt(before, 'BEFORE'),
         get_search_stmt(since, 'SINCE')
     )).strip() # 太恶心了，多了个空格，给的错误竟然还是cannot parse command，fuck
-    if not before and not since:
-        query = 'ALL'
+    query = 'UNSEEN' if unseen else 'ALL' + query
 
     status, ids = mail.search(None, query)
     if status == OK:
         return ids[0].split()
+
+
+def get_attachment_from_message(message, file_path):
+    for part in message.walk():
+        if part.is_multipart():
+            continue
+        elif part.get('Content-Disposition') is None:
+            continue
+        else:
+            with open(file_path, 'wb') as f:
+                f.write(part.get_payload(decode=True))
 
 

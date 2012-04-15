@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80d9da27-00bc-4bb1-a4f5-37d7253445d6" name="Default" comment="fetch mails between specific dates">
+    <list default="true" id="80d9da27-00bc-4bb1-a4f5-37d7253445d6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mail_utils.py" afterPath="$PROJECT_DIR$/mail_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="mail-helper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,30 +29,10 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="31" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+            <state line="30" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#19#31#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gui_main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui/gui_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="15" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="27" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,10 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail_utils.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mail_utils.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mail_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="6" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.9534483">
+            <state line="106" column="0" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="662" selection-end="662" vertical-scroll-proportion="0.6463654">
               <folding />
             </state>
           </provider>
@@ -109,14 +100,15 @@
         <option value="$PROJECT_DIR$/sample" />
         <option value="$PROJECT_DIR$/gui/gui_main.py" />
         <option value="$PROJECT_DIR$/matcher.py" />
+        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/mail_utils.py" />
-        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1252" />
+    <option name="x" value="928" />
+    <option name="width" value="927" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -145,6 +137,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,25 +181,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -318,28 +310,32 @@
       <created>1334425179370</created>
       <updated>1334425179370</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fetch mails between specific dates">
+      <created>1334425285430</created>
+      <updated>1334425285430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1252" height="1080" extended-state="0" />
+    <frame x="928" y="0" width="927" height="1080" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.496633" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1969697" sideWeight="0.6713666" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2526072" sideWeight="0.5943601" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39696312" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40563992" sideWeight="0.16582492" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40563992" sideWeight="0.82828283" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.49747476" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40563992" sideWeight="0.82828283" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -399,44 +395,39 @@
     <MESSAGE value="fetch mails between specific dates" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/mail_utils.py</url>
+          <line>104</line>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python26/Lib/base64.py">
+    <entry file="file://D:/Python32/Lib/email/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.3327032" />
+        <state line="36" column="0" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/-891257481/__builtin__.py">
+    <entry file="file://D:/Python32/Lib/base64.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1868" column="8" selection-start="62164" selection-end="62164" vertical-scroll-proportion="0.48969072" />
+        <state line="82" column="0" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://C:/Python26/Lib/email/message.py">
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/555919643/_datetime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="0" selection-start="10641" selection-end="10641" vertical-scroll-proportion="0.0" />
+        <state line="53" column="21" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.33202356" />
       </provider>
     </entry>
-    <entry file="file://C:/Python26/Lib/re.py">
+    <entry file="file://$PROJECT_DIR$/gui/gui_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="0" selection-start="8942" selection-end="8942" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python26/Lib/imaplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="434" column="0" selection-start="14687" selection-end="14687" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" />
+        <state line="5" column="15" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="22" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="72" column="22" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
@@ -444,55 +435,70 @@
         <state line="2" column="24" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://D:/Python32/Lib/email/parser.py">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+        <state line="23" column="30" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Python32/Lib/email/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="270" column="0" selection-start="10427" selection-end="10427" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python32/Lib/base64.py">
+    <entry file="file://D:/Python32/Lib/email/iterators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/555919643/_datetime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.33202356">
+        <state line="29" column="0" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="31" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#19#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+        <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/gui_main.py">
+    <entry file="file://D:/Python32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
+        <state line="310" column="0" selection-start="10039" selection-end="10039" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd_breakpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/as.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mail_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="6" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.9534483">
+        <state line="106" column="0" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="662" selection-end="662" vertical-scroll-proportion="0.6463654">
           <folding />
         </state>
       </provider>
